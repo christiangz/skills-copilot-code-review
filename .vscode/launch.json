@@ -10,10 +10,16 @@
       "request": "launch",
       "module": "uvicorn",
       "args": [
-        "src.app:app",
-        "--reload"
+        "app:app",
+        "--reload",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8000"
       ],
-      "jinja": true
+      "cwd": "${workspaceFolder}/src",
+      "jinja": true,
+      "justMyCode": true
     }
   ]
 }
